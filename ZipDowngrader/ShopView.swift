@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ShopView: View {
     @State private var show5PurchaseAlert = false
+    @State private var showDisclaimerAlert = false
     
     var body: some View {
         NavigationView {
@@ -107,7 +108,7 @@ struct ShopView: View {
                                         .padding(.vertical, 5)
                                         // Devices Downgraded
                                         VStack(spacing: -4) {
-                                            Image(systemName: "centsign.ring.dashed")
+                                            Image(systemName: "dollarsign.circle.fill")
                                                 .frame(width: 50, height: 40)
                                                 .font(.system(size: 50))
                                             Text("1+ days*")
@@ -200,7 +201,7 @@ struct ShopView: View {
                                             Image(systemName: "star.fill")
                                             Image(systemName: "star.fill")
                                         }
-                                        Text("I downgraded my iPhone 14 Plus to iOS 17.3 beta 1, and it's bootlooping. That means it's working! Also, I installed Prism and now my phone looks jailbroken. Well I would have anyways but my phone wont turn on.")
+                                        Text("I downgraded my iPhone 14 Plus to iOS 17.3 beta 1, and it's bootlooping. That means it's working! Also, I love shilling my apps. Download Prism Please Please.")
                                             .font(Font.custom("times", size: 20))
                                             .fixedSize(horizontal: false, vertical: true)
                                             .multilineTextAlignment(.center)
@@ -299,6 +300,24 @@ struct ShopView: View {
                         }
                         .shadow(color: .red.opacity(1), radius: 8, x: 0, y: 0)
                         .shadow(color: .red.opacity(1), radius: 8, x: 0, y: 0)
+                        Section {
+                            Button(action: {
+                                showDisclaimerAlert = true
+                            }) {
+                                HStack(spacing: 8) {
+                                    Image(systemName: "exclamationmark.triangle.fill")
+                                    Text("Disclaimer")
+                                        .font(Font.custom("times", size: 20))
+                                        .fontWeight(.bold)
+                                }
+                                .frame(maxWidth: .infinity, maxHeight: 20)
+                            }
+                        }
+                        .foregroundStyle(.blue)
+                        .mask { RoundedRectangle(cornerRadius: 0, style: .continuous) }
+                        .alert(isPresented: $showDisclaimerAlert) {
+                            Alert(title: Text("Made with hatred by the jailbreak.party team"), message: Text("This app is a joke. This means you can't downgrade, buy credits, or get scammed by zippgod24 (at least not in this app). Why do you think it was released on April 1st?"), dismissButton: .default(Text("Bro Ik")))
+                        }
                     }
                     Spacer()
                 }
