@@ -181,7 +181,7 @@ struct ShopView: View {
                                             Image(systemName: "star.fill")
                                             Image(systemName: "star")
                                         }
-                                        Text("I've never been able to rob so many people before! However, it's not nearly as fun as the times where I did it in real life. I miss those days. Minus one star for that.")
+                                        Text("I love this app! However, when I tried to buy credits, I was sending BTC through the same wallet I use to receive BTC from other people who buy this app. I wonder why. Minus 1 star.")
                                             .font(Font.custom("times", size: 20))
                                             .fixedSize(horizontal: false, vertical: true)
                                             .multilineTextAlignment(.center)
@@ -201,7 +201,7 @@ struct ShopView: View {
                                             Image(systemName: "star.fill")
                                             Image(systemName: "star.fill")
                                         }
-                                        Text("I downgraded my iPhone 14 Plus to iOS 17.3 beta 1, and it's bootlooping. That means it's working! Also, I love shilling my apps. Download Prism Please Please.")
+                                        Text("I downgraded my iPhone 14 Plus to iOS 17.3 beta 1, and it's bootlooping. That means it's working! Also, I love shilling my apps. Download Prism and Flux.")
                                             .font(Font.custom("times", size: 20))
                                             .fixedSize(horizontal: false, vertical: true)
                                             .multilineTextAlignment(.center)
@@ -316,7 +316,7 @@ struct ShopView: View {
                         .foregroundStyle(.blue)
                         .mask { RoundedRectangle(cornerRadius: 0, style: .continuous) }
                         .alert(isPresented: $showDisclaimerAlert) {
-                            Alert(title: Text("Made with hatred by the jailbreak.party team"), message: Text("This app is a joke. This means you can't downgrade, buy credits, or get scammed by zippgod24 (at least not in this app). Why do you think it was released on April 1st?"), dismissButton: .default(Text("Bro Ik")))
+                            Alert(title: Text("Made with hatred by the jailbreak.party team"), message: Text("This app is a joke. This means you can't downgrade, buy credits, or get scammed by zippgod24 (at least not in this app). Why do you think it was released on April 1st? All jokes aside, we do not condone hate or harrassment towards any invidiuals mentioned in this app. It is meant purely for the laughs."), dismissButton: .default(Text("Bro Ik")))
                         }
                     }
                     Spacer()
