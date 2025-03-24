@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$0")"
 
-APPLICATION_NAME=NeoSigner
+APPLICATION_NAME=ZipDowngrader
 
 echo "[*] $APPLICATION_NAME Build Script"
 
