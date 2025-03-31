@@ -140,7 +140,7 @@ struct ContentView: View {
                                     .frame(maxWidth: .infinity, maxHeight: 30)
                                 }
                                 .foregroundStyle(.green)
-                                .background(Color(.green.opacity(0.5)))
+                                .background(.green.opacity(0.5))
                                 .mask { RoundedRectangle(cornerRadius: 0, style: .continuous) }
                             }
                             .shadow(color: .green.opacity(0.8), radius: 8, x: 0, y: 0)
