@@ -10,6 +10,7 @@ import SwiftUI
 struct ShopView: View {
     @State private var show5PurchaseAlert = false
     @State private var showDisclaimerAlert = false
+    @AppStorage("credits") private var credits: Int = 0
     
     var body: some View {
         NavigationView {
@@ -150,105 +151,115 @@ struct ShopView: View {
                             ScrollView(.horizontal) {
                                 HStack {
                                     // Review 1
-                                    VStack {
-                                        HStack {
-                                            Text("lunginspector")
-                                                .font(Font.custom("times", size: 18))
-                                                .fontWeight(.bold)
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
+                                    ScrollView(.vertical) {
+                                        VStack {
+                                            HStack {
+                                                Text("lunginspector")
+                                                    .font(Font.custom("times", size: 18))
+                                                    .fontWeight(.bold)
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                            }
+                                            Text("Downloaded the app and paid for the credits.\nMy iPhone 15 Pro is now on iOS 17.0 thanks to this tool, but I am stuck in September 22nd, 2023, and I can't escape.\nPlease help.")
+                                                .font(Font.custom("times", size: 20))
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.leading)
                                         }
-                                        Text("Downloaded the app and paid for the credits. My iPhone 15 Pro is now on iOS 17.0 thanks to this tool, but I am stuck in September 22nd, 2023, and I can't escape. Please help.")
-                                            .font(Font.custom("times", size: 20))
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .multilineTextAlignment(.center)
+                                        .padding()
+                                        .background(.yellow.opacity(0.4))
+                                        .frame(width: 300, height: .infinity, alignment: .leading)
                                     }
-                                    .padding()
-                                    .background(.yellow.opacity(0.4))
-                                    .frame(maxWidth: 400, maxHeight: .infinity)
                                     // Review 2
-                                    VStack {
-                                        HStack {
-                                            Text("zippgod24")
-                                                .font(Font.custom("times", size: 18))
-                                                .fontWeight(.bold)
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star")
+                                    ScrollView(.vertical) {
+                                        VStack {
+                                            HStack {
+                                                Text("zippgod24")
+                                                    .font(Font.custom("times", size: 18))
+                                                    .fontWeight(.bold)
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star")
+                                            }
+                                            Text("I love this app! However, when I tried to buy credits, I was sending BTC through the same wallet I use to receive BTC from other people who buy this app. I wonder why. Minus 1 star.")
+                                                .font(Font.custom("times", size: 20))
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.center)
                                         }
-                                        Text("I love this app! However, when I tried to buy credits, I was sending BTC through the same wallet I use to receive BTC from other people who buy this app. I wonder why. Minus 1 star.")
-                                            .font(Font.custom("times", size: 20))
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .multilineTextAlignment(.center)
+                                        .padding()
+                                        .background(.yellow.opacity(0.4))
+                                        .frame(width: 300, height: .infinity, alignment: .leading)
                                     }
-                                    .padding()
-                                    .background(.yellow.opacity(0.4))
-                                    .frame(maxWidth: 400, maxHeight: .infinity)
                                     // BrocoDev
-                                    VStack {
-                                        HStack {
-                                            Text("BrocoDev")
-                                                .font(Font.custom("times", size: 18))
-                                                .fontWeight(.bold)
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
+                                    ScrollView(.vertical) {
+                                        VStack {
+                                            HStack {
+                                                Text("BrocoDev")
+                                                    .font(Font.custom("times", size: 18))
+                                                    .fontWeight(.bold)
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                            }
+                                            Text("I downgraded my iPhone 14 Plus to iOS 17.3 beta 1, and it's bootlooping. That means it's working! Also, I love shilling my apps. Download Prism and Flux.")
+                                                .font(Font.custom("times", size: 20))
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.center)
                                         }
-                                        Text("I downgraded my iPhone 14 Plus to iOS 17.3 beta 1, and it's bootlooping. That means it's working! Also, I love shilling my apps. Download Prism and Flux.")
-                                            .font(Font.custom("times", size: 20))
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .multilineTextAlignment(.center)
+                                        .padding()
+                                        .background(.yellow.opacity(0.4))
+                                        .frame(width: 300, height: .infinity, alignment: .leading)
                                     }
-                                    .padding()
-                                    .background(.yellow.opacity(0.4))
-                                    .frame(maxWidth: 400, maxHeight: .infinity)
                                     // Skadz
-                                    VStack {
-                                        HStack {
-                                            Text("Skadz")
-                                                .font(Font.custom("times", size: 18))
-                                                .fontWeight(.bold)
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
+                                    ScrollView(.vertical) {
+                                        VStack {
+                                            HStack {
+                                                Text("Skadz")
+                                                    .font(Font.custom("times", size: 18))
+                                                    .fontWeight(.bold)
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                            }
+                                            Text("I POST DEVICEFARM LEAKED!!! https://www.mediafire.com/file/6bxo9hw1t9b81sk/Devicefarm.zip/file")
+                                                .font(Font.custom("times", size: 20))
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.center)
                                         }
-                                        Text("I POST DEVICEFARM LEAKED!!! https://www.mediafire.com/file/6bxo9hw1t9b81sk/Devicefarm.zip/file")
-                                            .font(Font.custom("times", size: 20))
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .multilineTextAlignment(.center)
+                                        .padding()
+                                        .background(.yellow.opacity(0.4))
+                                        .frame(width: 300, height: .infinity, alignment: .leading)
                                     }
-                                    .padding()
-                                    .background(.yellow.opacity(0.4))
-                                    .frame(maxWidth: 400, maxHeight: .infinity)
                                     // pwned20forever
-                                    VStack {
-                                        HStack {
-                                            Text("pwned20forever")
-                                                .font(Font.custom("times", size: 18))
-                                                .fontWeight(.bold)
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
-                                            Image(systemName: "star.fill")
+                                    ScrollView(.vertical) {
+                                        VStack {
+                                            HStack {
+                                                Text("pwned20forever")
+                                                    .font(Font.custom("times", size: 18))
+                                                    .fontWeight(.bold)
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                                Image(systemName: "star.fill")
+                                            }
+                                            Text("This app is great! I'm so suprised at the design of this UI, it's absoultely amazing! I'm glad Od1n was able to inspire this project, and I hope more apps follow this trend.")
+                                                .font(Font.custom("times", size: 20))
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.center)
                                         }
-                                        Text("This app is great! I'm so suprised at the design of this UI, it's absoultely amazing! I'm glad Od1n was able to inspire this project, and I hope more apps follow this trend.")
-                                            .font(Font.custom("times", size: 20))
-                                            .fixedSize(horizontal: false, vertical: true)
-                                            .multilineTextAlignment(.center)
+                                        .padding()
+                                        .background(.yellow.opacity(0.4))
+                                        .frame(width: 300, height: .infinity, alignment: .leading)
                                     }
-                                    .padding()
-                                    .background(.yellow.opacity(0.4))
-                                    .frame(maxWidth: 400, maxHeight: .infinity)
                                 }
                             }
                             .frame(maxHeight: .infinity)
@@ -282,6 +293,7 @@ struct ShopView: View {
                         Section {
                             Button(action: {
                                 show5PurchaseAlert = true
+                                credits += 5
                             }) {
                                 HStack(spacing: 8) {
                                     Image(systemName: "bitcoinsign.circle.fill")

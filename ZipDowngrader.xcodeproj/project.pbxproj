@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		AA3DBAD22D8A572C004363D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA3DBAB82D8A572B004363D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA3DBABF2D8A572B004363D6;
-			remoteInfo = ZipDowngrader;
-		};
-		AA3DBADC2D8A572C004363D6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA3DBAB82D8A572B004363D6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AA3DBABF2D8A572B004363D6;
-			remoteInfo = ZipDowngrader;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		AA3DBAC02D8A572B004363D6 /* ZipDowngrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipDowngrader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA3DBAD12D8A572C004363D6 /* ZipDowngraderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipDowngraderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA3DBADB2D8A572C004363D6 /* ZipDowngraderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZipDowngraderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -68,20 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA3DBACE2D8A572C004363D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA3DBAD82D8A572C004363D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				AA3DBAC02D8A572B004363D6 /* ZipDowngrader.app */,
-				AA3DBAD12D8A572C004363D6 /* ZipDowngraderTests.xctest */,
-				AA3DBADB2D8A572C004363D6 /* ZipDowngraderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,52 +95,6 @@
 			productReference = AA3DBAC02D8A572B004363D6 /* ZipDowngrader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AA3DBAD02D8A572C004363D6 /* ZipDowngraderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA3DBAE82D8A572C004363D6 /* Build configuration list for PBXNativeTarget "ZipDowngraderTests" */;
-			buildPhases = (
-				AA3DBACD2D8A572C004363D6 /* Sources */,
-				AA3DBACE2D8A572C004363D6 /* Frameworks */,
-				AA3DBACF2D8A572C004363D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA3DBAD32D8A572C004363D6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				AA3DBAD42D8A572C004363D6 /* ZipDowngraderTests */,
-			);
-			name = ZipDowngraderTests;
-			packageProductDependencies = (
-			);
-			productName = ZipDowngraderTests;
-			productReference = AA3DBAD12D8A572C004363D6 /* ZipDowngraderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		AA3DBADA2D8A572C004363D6 /* ZipDowngraderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AA3DBAEB2D8A572C004363D6 /* Build configuration list for PBXNativeTarget "ZipDowngraderUITests" */;
-			buildPhases = (
-				AA3DBAD72D8A572C004363D6 /* Sources */,
-				AA3DBAD82D8A572C004363D6 /* Frameworks */,
-				AA3DBAD92D8A572C004363D6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA3DBADD2D8A572C004363D6 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				AA3DBADE2D8A572C004363D6 /* ZipDowngraderUITests */,
-			);
-			name = ZipDowngraderUITests;
-			packageProductDependencies = (
-			);
-			productName = ZipDowngraderUITests;
-			productReference = AA3DBADB2D8A572C004363D6 /* ZipDowngraderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,14 +107,6 @@
 				TargetAttributes = {
 					AA3DBABF2D8A572B004363D6 = {
 						CreatedOnToolsVersion = 16.2;
-					};
-					AA3DBAD02D8A572C004363D6 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = AA3DBABF2D8A572B004363D6;
-					};
-					AA3DBADA2D8A572C004363D6 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = AA3DBABF2D8A572B004363D6;
 					};
 				};
 			};
@@ -214,28 +125,12 @@
 			projectRoot = "";
 			targets = (
 				AA3DBABF2D8A572B004363D6 /* ZipDowngrader */,
-				AA3DBAD02D8A572C004363D6 /* ZipDowngraderTests */,
-				AA3DBADA2D8A572C004363D6 /* ZipDowngraderUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA3DBABE2D8A572B004363D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA3DBACF2D8A572C004363D6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA3DBAD92D8A572C004363D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,34 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA3DBACD2D8A572C004363D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA3DBAD72D8A572C004363D6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AA3DBAD32D8A572C004363D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AA3DBABF2D8A572B004363D6 /* ZipDowngrader */;
-			targetProxy = AA3DBAD22D8A572C004363D6 /* PBXContainerItemProxy */;
-		};
-		AA3DBADD2D8A572C004363D6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AA3DBABF2D8A572B004363D6 /* ZipDowngrader */;
-			targetProxy = AA3DBADC2D8A572C004363D6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AA3DBAE32D8A572C004363D6 /* Debug */ = {
@@ -405,7 +273,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = HTH7RGGR9D;
+				DEVELOPMENT_TEAM = TA2N4LNLT8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -427,7 +295,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ZipDowngrader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbdotparty.ZipDowngrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -448,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = HTH7RGGR9D;
+				DEVELOPMENT_TEAM = TA2N4LNLT8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -470,7 +338,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ZipDowngrader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jbdotparty.ZipDowngrader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -478,96 +346,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
-		AA3DBAE92D8A572C004363D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HTH7RGGR9D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ZipDowngraderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipDowngrader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZipDowngrader";
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Debug;
-		};
-		AA3DBAEA2D8A572C004363D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HTH7RGGR9D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ZipDowngraderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZipDowngrader.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZipDowngrader";
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
-		AA3DBAEC2D8A572C004363D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HTH7RGGR9D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ZipDowngraderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = ZipDowngrader;
-				XROS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Debug;
-		};
-		AA3DBAED2D8A572C004363D6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HTH7RGGR9D;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jailbreakdotparty.ZipDowngraderUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = ZipDowngrader;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -589,24 +367,6 @@
 			buildConfigurations = (
 				AA3DBAE62D8A572C004363D6 /* Debug */,
 				AA3DBAE72D8A572C004363D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA3DBAE82D8A572C004363D6 /* Build configuration list for PBXNativeTarget "ZipDowngraderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA3DBAE92D8A572C004363D6 /* Debug */,
-				AA3DBAEA2D8A572C004363D6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA3DBAEB2D8A572C004363D6 /* Build configuration list for PBXNativeTarget "ZipDowngraderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AA3DBAEC2D8A572C004363D6 /* Debug */,
-				AA3DBAED2D8A572C004363D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
