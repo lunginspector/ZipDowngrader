@@ -1,3 +1,6 @@
+>[!NOTE]
+>This was jailbreak.party's April Fools 2025 release. If you haven't caught on by now this tool does not actually do anything of use.
+
 ## ZipDowngrader
 ZipDowngrader is the fastest iOS/iPadOS downgrader in the world. Downgrade any device (A12+ support) in mere seconds. Downgrade any device completely for *almost* free, and obliterate your devices. Afforable pricing on all downgrades.
 
